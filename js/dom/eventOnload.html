@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onload event</title>
+</head>
+
+<body onload="checkCoocies()">
+    <h1>menggunakan event onload dengan dom</h1>
+    <p id="loadbosq"></p>
+
+    <script>
+        function checkCoocies() {
+            var text = "";
+            if (navigator.cookieEnabled == true) {
+                text = "cookies tersedia";
+            } else {
+                text = "cookies tidak tersedia";
+            }
+            document.getElementById("loadbosq").innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>

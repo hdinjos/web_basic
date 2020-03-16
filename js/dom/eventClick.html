@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event click</title>
+</head>
+
+<body>
+    <h1>Membuat event klik text</h1>
+    <p onclick="TextChange(this)">Klik text ini, maka akan berubah</p>
+
+    <script>
+        function TextChange(id) {
+            id.innerHTML = "Wow.... textnya berubah ya!"
+        }
+    </script>
+</body>
+
+</html>

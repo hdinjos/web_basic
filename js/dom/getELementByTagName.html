@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get element by tag name</title>
+</head>
+
+<body>
+    <h1>belajar get element tag name</h1>
+    <div id="belajar">
+        <p>Belajar dom di javascript</p>
+        <p>tentunnya sangat mudah</p>
+    </div>
+    <p id="test"></p>
+
+    <script>
+        var i = document.getElementById("belajar");
+        var j = i.getElementsByTagName("p");
+        document.getElementById("test").innerHTML = "ternyata tag yang berhasil di dapat adalah " + j[0].innerHTML;
+    </script>
+</body>
+
+</html>

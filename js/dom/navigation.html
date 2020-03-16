@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menggunakan navigation</title>
+</head>
+
+<body>
+    <h2>Navigation in dom</h2>
+    <h3 id="no1">Ini Nomor Satu</h3>
+    <p id="no2"></p>
+
+    <script>
+        document.getElementById("no2").innerHTML =
+            document.getElementById("no1").firstChild.nodeValue;
+    </script>
+</body>
+
+</html>
