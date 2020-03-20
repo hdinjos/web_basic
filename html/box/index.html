@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Box model</title>
+		<style>
+			.article{
+				max-width: 800px;
+				height: 200px;
+				margin: 0 auto;
+				background-color: cyan;
+				overflow: auto; /* visible, hidden, scroll, auto */
+			}
+			p {
+				font-size: 1.5em;
+				font-weight: 500;
+			}
+			.content {
+				width: 200px;
+				height: 200px;
+				background-color: green;
+				border: 10px solid black;
+				padding: 20px;
+				box-sizing: content-box;
+				margin: 0 auto;
+				box-shadow: 6px 6px 5px 5px magenta;
+			}
+			
+			.border {
+				width: 200px;
+				height: 200px;
+				background-color: blue;
+				border: 10px solid black;
+				padding: 20px;
+				box-sizing: border-box;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="article">
+			<p>All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.
+			The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, 
+			and the actual content.</p>
+		</div><br/>
+		<div class="content">
+			menggunakan content-box
+		</div><br/>
+		<div class="border">
+			mengunakan border-box
+		</div>
+	</body>
+</html>
