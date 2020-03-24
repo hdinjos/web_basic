@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Flexible Box</title>
+		<meta name="viewport" content="width=width-device, initial-scale=1">	
+		<style>
+			.container {
+				display: flex;
+				flex-direction: column;
+				width: 800px;
+				height: 250px;
+				background-color: #11c5c6;
+				border: 2px solid black;
+				padding: 10px;
+				border-radius: 10px;
+				margin: 0 auto;
+			}
+
+			.box {
+				background-color: #fbdd1c;
+				margin: 5px;
+				border: 2px solid black;
+				border-radius: 10px;
+				text-align: center;
+			}
+
+			.first {
+				flex-grow: 1;
+			}
+
+			.second {
+				flex-grow: 2;
+			}
+
+			.third {
+				flex-grow: 1;
+			}
+		</style>
+	</head>
+		<body>
+			<div class="container">
+				<div class="box first">1</div>
+				<div class="box second">2</div>
+				<div class="box third">1</div>
+			</div>
+
+		</body>
+</html>

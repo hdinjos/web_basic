@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flex direction</title>
+		<meta name="viewport" content="width=width-device, initial-scale=1">
+		<style>
+			.flex-column {
+				display: flex;
+				flex-direction: column;
+
+				width: 800px;
+				height: 500px;
+				padding: 20px;
+				margin: 0 auto;
+				border: 2px solid black;
+				border-radius: 10px;
+				background-color: #11c5c6;
+			}
+			
+			.flex-row {
+				display: flex;
+				flex-direction: row;
+				
+				padding: 20px;
+				margin: 5px;
+				background-color: #fbdd1c;
+				border: 2px solid black;
+				border-radius: 10px;
+			}
+			
+			.box {
+				flex-grow: 1;
+
+				margin: 5px;
+				border: 2px solid black;
+				border-radius: 10px;
+				background-color: #fe899a;
+			}
+
+			.one {
+				flex-grow: 2;
+			}
+
+			.two {
+				flex-grow: 1;
+			}
+
+			.three {
+				flex-grow: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="flex-column">
+			<div class="flex-row one">
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+			<div class="flex-row two">
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+			<div class="flex-row three">
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+		</div>
+	</body>
+</html>
+

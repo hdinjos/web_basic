@@ -1,0 +1,9 @@
+to result the viewport css
+
+2560 px x 1700 px  hardware pixel
+
+ 
+1280 px x 850 px device indpendent pixel
+
+
+device pixel ratio; hp/dpi => width: 2560/1280 = 2
