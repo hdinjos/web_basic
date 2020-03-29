@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>membuat element html baru</title>
+</head>
+<body>
+    <h1>cara membuat element html baru dan  memasukkannya ke document html</h1>
+    <ul>
+        <li>Membuat baru createElement</li>
+        <li>menyimpan dalam variable</li>
+        <li>Memasukkan ke document agar muncul di browser apendChild</li>
+    </ul>
+    <div>
+        <h3>contoh syntaxnya</h3>
+            <div>let newElement = document.createElement("h2");</div>
+            <div>newElement.innerHTML = `Ini adalah hasil dari pembuatan element baru`;</div>
+            <div>document.body.appendChild(newElement);</div>
+    </div>
+    <h3>Hasilnya</h3>
+
+    <script>
+        let newElement = document.createElement("h2");
+        newElement.innerHTML = `Ini adalah hasil dari pembuatan element baru`;
+        document.body.appendChild(newElement);
+    </script>
+</body>
+</html>

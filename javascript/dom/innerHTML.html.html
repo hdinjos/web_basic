@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memanipulasi attribute</title>
+</head>
+<body>
+    <figure>
+        <img id="catImage" src="https://i.ibb.co/9WT6LG6/two-three.jpg" alt="three-cats" width="600px">
+        <figcaption id="caption">Tiga anak kucing</figcaption>
+    </figure>
+    <button onclick="changeImg()">Ubah Tulisan</button>
+
+    <script>
+        function changeImg(){
+            let figcapImg = document.querySelector("#caption");
+            figcapImg.innerHTML = `<em>Tiga anak kucing</em>`;
+        }
+    </script>
+</body>
+</html>

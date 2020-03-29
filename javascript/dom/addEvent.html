@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memanipulasi attribute</title>
+</head>
+<body>
+    <figure>
+        <img id="catImage" src="https://i.ibb.co/9WT6LG6/two-three.jpg" alt="three-cats" width="600px">
+        <figcaption id="caption">Tiga anak kucing</figcaption>
+    </figure>
+    <script>
+        let newElement = document.createElement("p");
+        newElement.innerHTML = `click gambar akan menambah <span id="count">0</span> kali`;
+        document.body.appendChild(newElement);
+
+        let caption = document.querySelector("#catImage");
+        caption.addEventListener("click", function(event){
+            document.querySelector("#count").innerHTML++;
+        })
+    </script>
+</body>
+</html>
